@@ -31,6 +31,7 @@ function longestConsec(strarr, k) {
 
   for(let i = 0; i < strarr.length; i++){
     const current = strarr.slice(i, k + i).join('')
+
     if(current.length > result.length){
       result = current
     }
