@@ -30,8 +30,8 @@ function longestConsec(strarr, k) {
   if(k < 1 || k > strarr.length) return ''
 
   for(let i = 0; i < strarr.length; i++){
-    const current = strarr.slice(i, k + i).join('')
 
+    const current = strarr.slice(i, k + i).join('')
     if(current.length > result.length){
       result = current
     }
